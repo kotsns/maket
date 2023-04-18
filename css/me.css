@@ -1,0 +1,149 @@
+@import url('../css/header.css');
+@import url('../css/footer.css');
+@import url('../css/layout.css');
+
+.content_me {
+    padding-left: calc(50% - 1202px / 2);
+    padding-right: calc(50% - 1202px / 2);
+    padding-bottom: 150px;
+}
+
+.subtitle_me {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 36px;
+    color: #000000;
+    padding-top: 37px;
+    padding-bottom: 12px;
+}
+
+.subtitle_text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    color: #000000;
+    padding-top: 15px;
+}
+
+.text_me {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    padding-top: 15px;
+}
+
+.subtitle_subheading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.image {
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+  @keyframes scale-in-hor-center {
+    0% {
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      opacity: 1;
+    }
+  }
+  
+.image_city {
+    animation: scale-in-hor-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    transition: all 0.3S;
+}
+
+.article_science {
+    position: relative;
+    width: 60%;
+}
+
+.point_me {
+    padding-left: 50px;
+}
+
+.list {
+    padding-left: 10px;
+}
+
+.numbered_list {
+    padding-top: 15px;
+}
+
+.gif {
+    position: absolute;
+    max-width: 350px;
+    left: 750px;
+    top: 0px;
+}
+
+.quote {
+    flex-wrap: wrap;
+    font-size: 18px;
+    font-family: Lobster, cursive;
+    color:#3c4d76;
+}
+
+@media screen and (max-width: 1024px) {
+    /* Cтили для планшета */
+    .content_me {
+        padding-left: calc(50% - 736px / 2);
+        padding-right: calc(50% - 736px / 2);
+    }
+
+    .gif {
+        position: absolute;
+        max-width: 250px;
+        left: 450px;
+        top: 60px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* Cтили для мобильного телефона */
+    .content_me {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .subtitle_me {
+        text-align: center;
+    }
+    
+    .subtitle_text {
+        text-align: center;
+    }
+    
+    .subtitle_subheading {
+        text-align: center;
+    }
+    
+    .article_science {
+        width: 90%;
+    }
+
+    .gif {
+        position: relative;
+        width: 200px;
+        left: 50px;
+        top: 0px;
+    }
+    .article_hobby {
+        font-size: 16px;
+    }
+
+}
